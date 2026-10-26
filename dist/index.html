@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#191a17">
+  <title>Azaan Noman — Research & Engineering</title>
+  <meta name="description" content="Azaan Noman explores machine learning, neuroscience, and autonomous systems. Selected research, engineering projects, and things built out of curiosity.">
+  <meta property="og:title" content="Azaan Noman — Research & Engineering">
+  <meta property="og:description" content="Exploring intelligence, from brains to machines.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preload" href="/assets/geist-mono.ttf" as="font" type="font/ttf" crossorigin>
+  <script>try{const t=localStorage.getItem('az-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch{}</script>
+  <script src="/app.js" defer></script>
+  <script src="/pond.js" defer></script>
+</head>
+<body data-page="home">
+  <a class="skip" href="#content">Skip to content</a>
+  <button class="skip feed-skip" id="feed-rays" type="button">Feed manta rays</button>
+  <canvas id="ocean" aria-hidden="true"></canvas>
+  <div id="pond-stats" aria-hidden="true" data-pond-avoid><span class="ray-count">0</span><span class="food-count">0</span></div>
+  <nav class="desktop-nav" aria-label="Main navigation" data-pond-avoid>
+    <a href="#home" data-page="home">pond</a><a href="#research" data-page="research">research</a><a href="#projects" data-page="projects">projects</a><a href="#about" data-page="about">about</a>
+    <div class="nav-tools"><button class="icon-button theme-toggle" type="button" aria-label="Switch to light mode"><span aria-hidden="true">☼</span></button>
+    <button class="icon-button motion-toggle" type="button" aria-label="Pause manta ray animation" aria-pressed="false"><span aria-hidden="true">Ⅱ</span></button></div>
+  </nav>
+  <main id="content" class="content" tabindex="-1">
+    <section id="home" class="page home" aria-labelledby="home-title">
+      <div class="home-copy">
+        <p class="prelude" data-pond-avoid>follow a question.<br>see where it takes you<span class="cursor" aria-hidden="true"></span></p>
+        <div class="intro-copy" data-pond-avoid>
+        <h1 id="home-title">Hi, I'm Azaan.</h1>
+        <p>I'm exploring intelligence,<br class="desktop-break"> from brains to machines.</p>
+        <p>Working across <a href="#research">neuroscience &amp; machine learning</a>, building <a href="#projects">autonomous systems</a>, and following the ideas in between.</p>
+        <p>Currently aligning fly-brain networks with <a href="#research/flywire">FlyWire</a>, exploring neural calibration with <a href="#research/caliber">CALIBER</a>, and co-founding <a href="https://tryworktree.com/" target="_blank" rel="noopener noreferrer">Worktree<span class="sr-only"> (opens in a new tab)</span></a>.</p>
+        <div class="social-links"><a href="https://github.com/iecclodd" target="_blank" rel="noopener noreferrer">github</a><span>/</span><a href="mailto:azaannoman03@gmail.com">email</a><span>/</span><a href="/assets/Azaan_Noman_CV.pdf" target="_blank" rel="noopener noreferrer">cv ↗</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="page" hidden aria-labelledby="research-title">
+      <div class="page-heading"><p class="eyebrow">01 / RESEARCH</p><h1 id="research-title">A few open questions.</h1><p>How does intelligence transfer between brains, people, and machines?</p></div>
+      <article class="entry" id="flywire"><div class="entry-top"><h2>Cross-individual connectome alignment</h2><span class="status">in progress</span></div><p class="entry-meta">FlyWire · Prof. Wayne Hayes, UC Irvine<br>Princeton Neuroscience Institute</p><p>Aligning fly-brain networks with SANA, alongside NBLAST comparisons, to investigate which neurons have one-to-one counterparts across individuals and which lack a unique correspondence.</p><p class="tags">connectomics / graph alignment / neuroscience</p></article>
+      <article class="entry" id="semg"><div class="entry-top"><h2>Learning across users</h2><span class="status">co-author</span></div><p class="entry-meta">sEMG hand-gesture classification</p><p>Benchmarked three classifier families using 21 feature types and 128 channels from 18 participants. Evaluated cross-user generalization through 378 random-forest fits and leave-one-subject-out validation.</p><a class="quiet-link" href="https://github.com/iecclodd/Final-Models" target="_blank" rel="noopener noreferrer">research code ↗</a><p class="tags">biomedical signals / transferability / validation</p></article>
+      <article class="entry" id="caliber"><div class="entry-top"><h2>CALIBER</h2><span class="status">in progress</span></div><p class="entry-meta">Context-aware neural network calibration</p><p>Developing a hypernetwork-inspired calibration layer to adapt trained neural networks to new users with limited contextual data.</p><p class="tags">machine learning / personalization / calibration</p></article>
+      <article class="entry" id="quantum"><div class="entry-top"><h2>Classically simulable quantum circuits</h2><span class="status">in progress</span></div><p class="entry-meta">Prof. Stefanos Kourtis<br>Université de Sherbrooke · Mila</p><p>Investigating restricted quantum circuits for machine learning and optimization, with a focus on classical simulation, predictive performance, and computational cost.</p><p class="tags">quantum kernels / simulation / benchmarking</p></article>
+      <div class="page-end"><a href="#projects">some things I've built →</a></div>
+    </section>
+
+    <section id="projects" class="page" hidden aria-labelledby="projects-title">
+      <div class="page-heading"><p class="eyebrow">02 / PROJECTS</p><h1 id="projects-title">Ideas, made tangible.</h1><p>Research tools, flying things, and software that solves a problem.</p></div>
+      <article class="entry"><div class="entry-top"><h2><a href="https://github.com/iecclodd/irontrace" target="_blank" rel="noopener noreferrer">Irontrace ↗</a></h2><span class="entry-number">01</span></div><p class="entry-meta">Cost-aware ML for hydraulic inspection</p><p>A pump-leakage classifier built on 70 features, 14 sensors, and 2,205 recorded cycles. Budget-aware sensor selection paired with a FastAPI, React, and SQLite inspection console.</p><p class="tags">TabPFN / Python / FastAPI / React</p></article>
+      <article class="entry"><div class="entry-top"><h2><a href="https://github.com/iecclodd/dronelab" target="_blank" rel="noopener noreferrer">DroneLab ↗</a></h2><span class="entry-number">02</span></div><p class="entry-meta">AI training &amp; evaluation for drone control</p><p>A physics-based environment for training drone-control policies. Combines Rapier dynamics with TensorFlow.js behavior cloning, reproducible flight episodes, and evaluation against scripted and random controllers.</p><p class="tags">Rapier / TensorFlow.js / simulation</p></article>
+      <article class="entry"><div class="entry-top"><h2>Axiom</h2><span class="entry-number">03</span></div><p class="entry-meta">Quantitative research &amp; backtesting</p><p>An Electron research application combining market data, signal scoring, ML outcome tracking, and AI-assisted research. Developing an XGBoost ranking pipeline with walk-forward validation and transaction-cost modeling.</p><p class="entry-note">Research and simulation only.</p><p class="tags">Electron / TypeScript / SQLite / XGBoost</p></article>
+      <article class="entry"><div class="entry-top"><h2><a href="https://tryworktree.com/" target="_blank" rel="noopener noreferrer">Worktree ↗</a></h2><span class="entry-number">04</span></div><p class="entry-meta">Co-founder · product strategy</p><p>Exploring how developers work together with AI. Translating context fragmentation and overlapping agent work into priorities for shared workspaces, conflict awareness, and local execution.</p><p class="tags">developer tools / collaboration / product</p></article>
+      <article class="entry"><div class="entry-top"><h2><a href="https://github.com/iecclodd/treehugger" target="_blank" rel="noopener noreferrer">Treehugger ↗</a></h2><span class="entry-number">05</span></div><p class="entry-meta">A contextual Discord assistant</p><p>Built a Discord assistant for contextual questions, sourced search, and summaries, using Groq and Tavily on a Cloudflare Workers architecture.</p><p class="tags">Groq / Tavily / Cloudflare Workers</p></article>
+      <article class="entry"><div class="entry-top"><h2>CalcQuest</h2><span class="entry-number">06</span></div><p class="entry-meta">Junior developer · adaptive learning</p><p>Developing machine-learning personalization for AP Calculus AB/BC practice based on learner progress, with contributions to game design and visuals.</p><p class="tags">personalization / education / game design</p></article>
+      <div class="small-section"><h2>Also exploring</h2><p>A bioinspired silicone-membrane pump, connectome-driven drone autonomy, and three hand-built racing drones.</p><p>Co-founder of <a href="https://morroapp.vercel.app/" target="_blank" rel="noopener noreferrer">Morro ↗</a> and <a href="https://polyshield.vercel.app/" target="_blank" rel="noopener noreferrer">Polyshield ↗</a>.</p></div>
+      <div class="page-end"><a href="https://github.com/iecclodd" target="_blank" rel="noopener noreferrer">more on github ↗</a></div>
+    </section>
+
+    <section id="about" class="page" hidden aria-labelledby="about-title">
+      <div class="page-heading"><p class="eyebrow">03 / ABOUT</p><h1 id="about-title">A little more human.</h1><p>A student, builder, and perpetually curious person in Katy, Texas.</p></div>
+      <div class="prose"><p>I'm at Seven Lakes High School, graduating in 2028. My interests sit somewhere between machine learning, autonomous systems, neuroscience, and biomedical engineering.</p><p>I like taking a question far enough that it becomes something I can test, build, or break. Sometimes that's a model. Sometimes it's a circuit, a drone, or a transforming trebuchet.</p></div>
+      <div class="small-section"><h2>Building beyond software</h2><p>On <a href="https://www.thebluealliance.com/team/4639" target="_blank" rel="noopener noreferrer">RoboSpartans, FRC 4639 ↗</a>, I work on electrical layouts, power distribution, CAN wiring, sensors, and cable routing.</p><p>My teams placed 3rd globally in Destination Imagination's 2024 Engineering Challenge and won Grand Champion in the Pumps &amp; Pipes ChemE Car challenge.</p></div>
+      <div class="small-section"><h2>People &amp; community</h2><dl class="roles"><div><dt>Hearts for Elders</dt><dd>Head of Chapter Management<br>Coordinating initiatives across 25+ chapters on 6 continents.</dd></div><div><dt>Mecclabs</dt><dd>Mechanical Co-Director<br>Designing multidisciplinary engineering camp curriculum.</dd></div><div><dt>TSA &amp; Student Council</dt><dd>Officer<br>Supporting competitors, students, and community fundraising.</dd></div><div><dt>Yo Jing Swim Academy</dt><dd>Swim Instructor<br>Teaching children technique and competitive swimming.</dd></div></dl></div>
+      <div class="small-section"><h2>Away from the keyboard</h2><p>V7 bouldering. A 7.4-second speed-climbing personal best. FPV drones. About four hours a week on the climbing wall.</p></div>
+      <div class="small-section"><h2>Things I work with</h2><p class="tools">Python, TypeScript, MATLAB, React, Electron, FastAPI, SQLite, PyTorch, NumPy, TensorFlow.js, Three.js, Rapier, SANA, NBLAST, and AutoCAD.</p></div>
+      <div class="page-end"><a href="mailto:azaannoman03@gmail.com">say hello ↗</a><span>/</span><a href="/assets/Azaan_Noman_CV.pdf" target="_blank" rel="noopener noreferrer">full cv ↗</a></div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>stay curious.</span><div><button type="button" class="icon-button motion-toggle" aria-label="Pause manta ray animation" aria-pressed="false"><span aria-hidden="true">Ⅱ</span></button><button type="button" class="icon-button theme-toggle" aria-label="Switch to light mode"><span aria-hidden="true">☼</span></button></div></footer>
+</body>
+</html>
