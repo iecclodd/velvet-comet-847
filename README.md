@@ -2,6 +2,8 @@
 
 Azaan Noman’s portfolio. The project name is temporary.
 
+Website: [velvet-comet-847.vercel.app](https://velvet-comet-847.vercel.app/)
+
 Static portfolio with an interactive manta ray pond, responsive navigation, dark and light themes, and reduced-motion support. Content is based on the supplied Azaan Noman CV.
 
 The silver-blue pixel manta is extracted from the user's selected concept image. Every ray keeps that original palette, with individualized spot patterns, wing rhythms, curiosity, boldness, cruise speed, and circling direction. A 20-node chain uses fixed-length links and damped angular joints, so turns travel gradually from head to tail. Head acceleration is eased, and wakes follow the visible trailing chain. Slow pointer movements attract curious rays; fast nearby movements startle them. Rays slow down and surface slightly while investigating a gentle cursor. Clicking or tapping open water drops food, attracts rays, and produces expanding ASCII ripples. Wakes, schooling, depth, and food consumption run in the simulation. A keyboard-accessible feed button is available in the skip-navigation sequence. Animation can be paused from navigation or the page footer.
