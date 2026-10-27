@@ -2,7 +2,7 @@
 
 Azaan Noman’s portfolio. The project name is temporary.
 
-Website: [velvet-comet-847.vercel.app](https://velvet-comet-847.vercel.app/)
+Website: [azaannoman.vercel.app](https://azaannoman.vercel.app/)
 
 Static portfolio with an interactive manta ray pond, responsive navigation, dark and light themes, and reduced-motion support. Content is based on the supplied Azaan Noman CV.
 
@@ -23,3 +23,5 @@ Fonts: Geist Mono (Vercel) and Instrument Serif (Rodrigo Fuenzalida), distribute
 ## Deployment
 
 Vercel serves `dist/` as a static site. No dependency installation, build step, environment variables, or backend services are required. The production branch is `main`.
+
+The `azaannoman` Vercel project deploys this repository’s `main` branch. The original public CV URL, `/Azaan_Noman_General_CV.pdf`, is retained.
